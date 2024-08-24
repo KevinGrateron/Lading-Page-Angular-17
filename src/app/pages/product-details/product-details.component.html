@@ -1,0 +1,17 @@
+@if(loading){
+    <h1>La informacion se esta cargando espera un momento</h1>
+}
+@if (!loading) {
+    <div class="container">
+        <h1>Mas infromacion de este producto que seleccionaste!</h1>
+        <div class="card mt-3" style="width: 24rem;">
+            <img src="{{product?.image}}" class="card-img-top" alt="{{product?.title}}">
+            <div class="card-body">
+              <h5 class="card-title">{{product?.title}}</h5>
+              <p class="card-text">{{product?.description}}</p>
+              <div class="center"><a href="#" class="btn btn-primary">{{product?.price | currency }}</a></div>
+            </div>
+          </div>
+    </div>
+}
+

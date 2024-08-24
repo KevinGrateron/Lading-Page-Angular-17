@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 92.4vh;
+    align-items: center;
+}
+img{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    /* box-shadow: 2px 2px 4px 4px yellow; */
+}   
